@@ -1,0 +1,58 @@
+body{
+    background-color:#000;
+}
+#content{
+    display:block;
+    margin:auto;
+    max-width:1444px;
+    height:100vh;
+    min-height:600px;
+    background-color:#000;
+}
+#content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left; 
+    width: 50%;
+    overflow: hidden;
+    color:#fff;
+    height:100%;
+}
+#text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#text-content p {
+    padding: 0px 100px;
+    font-family:roboto-bold;
+    font-size:2em;
+}
+#img-box{
+    margin-top:0px;
+    animation-name: imageAnim;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+@keyframes imageAnim{
+    0%   {margin-top:0px;}
+    50%  {margin-top:20px;}
+    100% {margin-top:0px;}
+}
+
+@media only screen and (max-width: 768px){
+    #content > div{
+        width:100%;
+        position:absolute;
+    }
+    #text-content p {
+        padding-left:10%;
+        padding-right:10%;
+    }
+    #text-content{
+        z-index:2;
+        background-color:rgba(0,0,0,0.7);
+    }
+}

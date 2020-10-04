@@ -1,0 +1,32 @@
+#container{
+    padding-top:50px;
+    width: 80%;
+    min-height:100vh;
+    /* min-height:600px; */
+    display:flex;
+    direction:column;
+    flex-wrap: wrap;
+    margin:auto;
+    font-family:roboto-light;
+}
+.intro, .phases{
+    width:100%;
+    text-align: center;
+    font-family:roboto-light;
+    padding:10px 20px;
+}
+.phases{
+    border-top:solid 1px #aaa;
+}
+.phase-name{
+    font-family: roboto-bold;
+    color:#444;
+}
+.phase-details{
+    padding-top:10px;
+}
+@media only screen and (min-width:1920px){
+    .phases, .intro{
+        font-size:1.5rem;
+    }
+}

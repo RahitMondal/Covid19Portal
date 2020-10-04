@@ -1,0 +1,20 @@
+#container{
+    padding-top:50px;
+    width: 80%;
+    min-height:100vh;
+    /* min-height:600px; */
+    display:flex;
+    direction:column;
+    flex-wrap: wrap;
+    margin:auto;
+    font-family:roboto-light;
+}
+#container p{
+    width:100%;
+    text-align: center;
+}
+@media only screen and (min-width:1920px){
+    p{
+        font-size:1.5rem;
+    }
+}
